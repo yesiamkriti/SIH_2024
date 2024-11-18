@@ -1,0 +1,19 @@
+.medicine-main{
+    position: relative;
+    font-family: "Poppins";
+    height: 100vh;
+
+}
+.medicine-record-cont{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top:10%;
+}
+h1{
+    position: absolute;
+    left:40%;
+    padding-bottom: 5vh;
+}

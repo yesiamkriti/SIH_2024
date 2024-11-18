@@ -1,0 +1,258 @@
+.login-main {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Poppins';
+    background-color: rgba(248, 234, 236, 1);
+}
+
+
+.login-image {
+    position: absolute;
+    right: 0%;
+    display: flex;
+    width: 60vw;
+    height: 90vh;
+    /* background-color: red; */
+}
+
+.login-image-main {
+    position: absolute;
+    display: flex;
+    height: 90vh;
+    right: 0%;
+}
+
+.login-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    right: 24%;
+    height: 100%;
+    gap:50px;
+    /* background-color: green; */
+}
+
+.login-heading {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+
+}
+
+.login-underline {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 5px;
+    border-radius: 50px;
+    border: none;
+    top: 100%;
+    outline: none;
+    background-color: rgba(255, 168, 177, 1);
+}
+
+.login-user-input {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    /* background-color: red; */
+}
+
+.login-email {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-top: 20px;
+    padding: 10px;
+    opacity: 0;
+    animation: fadeInSlideUp 1s ease forwards;
+}
+
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.user-email {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    /* bottom: 0; */
+    width: 50%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: rgba(248, 234, 236, 1);
+    font-size: 24px;
+}
+.logintimer-text{
+    position: relative;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.email-underline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 2px;
+    width: 60%;
+    border: none;
+    outline: none;
+    bottom: 0%;
+    border-radius: 50px;
+    background-color: black;
+}
+
+
+.getotp-button {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: none;
+    color:#25B3C2;
+    background: none;
+    left: 22%;
+    bottom: 10%;
+    cursor: pointer;
+}
+.getotp-button:hover{
+    color: #BF818A;
+}
+
+
+.register-button-cont {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 300px;
+    gap: 20px;
+    padding: 5px;
+}
+
+.dont-have-account-above-line {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 2px;
+    border: none;
+    outline: none;
+    background-color: black;
+    width: 50%;
+
+}
+.dont-have-account{
+    font-size: 20px;
+}
+.register-button {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    font-size: 16px;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border-radius: 50px;
+    background-color: rgba(255, 168, 177, 1);
+    border: none;
+    outline: none;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+.register-button:hover {
+    cursor: pointer;
+    border: 2px solid rgba(212, 97, 109, 1);
+    background-color: transparent;
+}
+
+@media(max-width:1500px) {
+    .login-image-main {
+        height: 90%;
+        width: 100%;
+    }
+    
+    .user-email{
+        width:60%;
+    }
+}
+
+@media(max-width:1170px) {
+    .login-image-main {
+        height: 90%;
+        width: 100%;
+    }
+    .login-heading{
+        font-size: 24px;
+    }
+    .user-email{
+        font-size: 20px;
+    }
+}
+@media(max-width: 990px){
+    .user-email{
+        font-size: 16px;
+    }
+}
+@media(max-width:800px){
+    .login-main{
+        position: relative;
+        flex-direction: column;
+        overflow-y: auto;
+        gap:40px;
+    }
+    .login-image{
+        position: relative;
+        top:10%;
+    }
+    .login-image-main{
+        position: relative;
+        width: 90vw;
+        height: auto;
+        right:18%;
+        /* background: red; */
+    }
+    .login-form{
+        width: 90vw;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        right: 0%;
+        padding: 10vh;
+    }
+}

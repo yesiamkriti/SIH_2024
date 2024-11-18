@@ -1,0 +1,266 @@
+.patient-dashboard-main{
+    position: absolute;
+display: flex;
+flex-direction: row;
+  font-family: "Poppins";
+}
+.patient-dashboard-main-container{
+    position: absolute;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Poppins';
+    background-color: rgba(248, 234, 236, 1);
+    padding:10px;
+    margin-left: 55px;
+}
+.patient-dashboard-headContainer{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.patient-dashboard-heading{
+    padding: 0px 35px;
+}
+.patient-dashboard-roundLine{
+    background-color: #FFA8B1;
+    height: 4px;
+    width:160px;
+    position: relative;
+    left:10px;
+}
+.patient-dashboard-details-cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.patient-dashboard-box-border{
+    border:2px solid #FFA8B1;
+    border-radius: 25px;
+    padding: 20px 60px;
+    margin: 10px;
+    font-size: 1rem;
+}
+.patient-dashboard-contact-details-cont{
+    width: 24vw;
+    height: 40vh;
+    background: white;
+}
+.patient-dashboard-info-cont{
+    width: 65vw;
+    height: 48vh;
+    /* margin-left: 30px; */
+    background: white;
+    position: relative;
+    left: -1%;
+}
+.patient-dashboard-overview-cont{
+    width: 90vw;
+    height: 40vh;
+    background: white;
+    position: relative;
+    left: -2%;
+}
+.patient-dashboard-history-cont{
+    width: 90vw;
+    height: 40vh;
+    background: white;
+    position: relative;
+    left: -2%;
+}
+.patient-dashboard-image-name{
+    /* border:2px solid; */
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+}
+.patient-dashboard-class-pink{
+    font-weight:bold;
+    color: #D4616D;
+}
+.patient-dashboard-emergency-contact-heading{
+    color:grey;
+    font-weight: bold;
+    font-size: 0.8em;
+    position: relative;
+    left: 30px;
+}
+
+.patient-dashboard-box-inner{
+    /* border: 2px solid red; */
+    display: inline-block;
+    width: 50%;
+}
+.patient-dashboard-box-inner-33{
+    /* border: 2px solid red; */
+    display: inline-block;
+    width: 33%;
+}
+.patient-dashboard-class-near{
+    position: relative;
+    top: -3px;
+}
+.patient-dashboard-personl-info-heading{
+    position: relative;
+    left: -25px;
+    margin-bottom: 10px;
+}
+.patient-dashboard-allergies-button{
+    background-color: #FFA8B1;
+    color: #321E21;
+    border: none;
+    font-weight:bold;
+    position: relative;
+    top: -15px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+.patient-dashboard-emergency-contact{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+    padding-top:10%;
+}
+
+/* mini window  */
+/* Modal Overlay */
+.modal {
+    display: block; /* Show the modal by default; toggle this dynamically using state */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    border-radius: 10px;
+    background-color: #E5B5BC;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 20px;
+    width: 30%; /* Could be more or less, depending on screen size */
+    color: #D4616D;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.close-btn {
+    color: #6d6c6c;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.patient-appointment-main-cont{
+    font-family: "Poppins";
+    /* position: absolute; */
+    width: 80vw;
+    height: 440px;
+    /* background: red; */
+    /* left: 250px; */
+    /* top: 500px; */
+    /* gap: 10px; */
+}
+.patient-appointment-heading-cont{
+    position: relative;
+}
+.patient-appointment-heading{
+    position: absolute;
+    display: flex;
+    /* width:300px; */
+    flex-direction: column;
+    color: rgba(212, 97, 109, 1);
+    /* background-color: red; */
+}
+
+
+.patient-Appointments-list-cont{
+    position: relative;
+    border: none;
+    /* padding: 10px; */
+    border: 3px solid rgba(255, 168, 177, 1);
+    /* width: 80%; */
+    /* height: 400px; */
+    top: -40px !important;
+    /* top: 100px; */
+    /* bottom: -400px; */
+    border-radius: 30px;
+    align-items: center;
+    overflow-y: auto;
+    /* justify-content: center; */
+}
+
+.patient-Appointments-list-cont::-webkit-scrollbar {
+    display: none;
+}
+/* Style for the table */
+table {
+    font-size: 20px;
+    width: 100%;
+    border-collapse: separate; /* Allows rounded corners */
+    border-spacing: 0; /* Ensures spacing is zero for consistent borders */
+    border-radius: 30px;
+    overflow: hidden;
+    /* margin: 20px 0; */
+}
+
+/* Style for table header */
+th {
+    background: rgba(255, 168, 177, 0.3);
+    color: #333;
+    text-align: center;
+    padding: 12px 8px;
+}
+
+/* Style for table rows */
+tr {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Alternate row color */
+tr:nth-child(even) {
+    background: rgba(255, 168, 177, 0.3);
+}
+
+/* Table data cells */
+td {
+  padding: 20px 8px; /* Adjust padding to increase row height */
+  text-align: center;
+}
+
+/* Highlight the status in red */
+td.status {
+    color: rgba(212, 97, 109, 1);
+}
+.ehrd-cont{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top:10%;
+    right: 5%;
+    width: 90vw;
+}
+

@@ -1,0 +1,59 @@
+.topbar-cont{
+    position: relative;
+    left: 100px;
+    width: 90%;
+    border: 3px solid #FFA8B1;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 0px 30px;
+    background-color: #F8EAEC;
+}
+.ayuraksha-logo-cont{
+    /* border: 2px solid red; */
+}
+.topbar-input{
+    border: 3px solid #FFA8B1;
+    width: 90%;
+    margin: 15px;
+    border-radius: 100px;
+    outline: none;
+    font-size: 1.5rem;
+    padding: 0px 20px;
+    color: grey;
+}
+.topbar-input:focus{
+    border: 5px solid #fddde0;
+}
+.topbar-input:hover{
+    cursor: pointer;
+}
+.topbar-input-and-icon{
+    /* border: 2px solid black; */
+    display: flex;
+    width: 50%;
+}
+.topbar-search{
+    margin: auto;
+    position: relative;
+    left: -11%;
+    svg{
+        height: 40px;
+        width: 40px;
+    }
+}
+.topbar-button{
+    width: 10%;
+    font-size: 1.5rem;
+    margin: 20px;
+    background-color: #FFA8B1;
+    border-radius: 50px;
+    border: 2px solid #FFA8B1;
+    padding: 10px 20px ;
+    color: #321E21;
+}
+.topbar-button:hover{
+    cursor: pointer;
+    background-color: transparent;
+}

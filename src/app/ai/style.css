@@ -1,0 +1,123 @@
+.ai-main {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    font-family: "Poppins";
+    background: #F8EAEC;
+}
+
+.ai-body {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #F8EAEC;
+    width: 100vw;
+    height: 100vh;
+    left: 100px;
+}
+
+
+.ai-window {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+    width: 90vw;
+    gap: 10px;
+    border-radius: 20px 20px 20px 20px;
+    right: 7%;
+    background: #F8EAEC;
+    overflow: hidden;
+}
+.ai-input-cont{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 90%;
+    border: 2px solid rgba(255, 168, 177, 0.5);
+    gap:5px;
+    bottom: 0%;
+    border-radius: 20px;
+    background: #F8EAEC;
+}
+.text-area{
+    max-height: 7vh;
+    height: max-content;
+    width: 50vw;
+    resize: none;
+    font-size: 20px;
+    color: #D4616D;
+    outline: none;
+    border: none;
+    border: 2px solid rgba(255, 168, 177, 0.5);
+    border-radius: 10px;
+    padding: 5px;
+}
+.ai-search-icon{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    border-radius: 100%;
+    height: 40px;
+    svg{
+        overflow: hidden;
+    }
+}
+.ai-search-icon:hover{
+    cursor: pointer;
+    background: #D4616D;
+    border-radius: 100%;
+    svg{
+        fill:#F8EAEC;
+    }
+}
+.ai-attach-icon{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+.ai-attach-icon:hover{
+    cursor: pointer;
+    border-radius: 100%;
+    background: #D4616D;
+    padding: 2px;
+    svg{
+        fill:#F8EAEC;
+    }
+}
+.ai-chat-window{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    height: 75vh;
+    width: 90%;
+    gap: 50px;
+    top:5%;
+    padding-bottom: 50px;
+    border: 2px solid rgba(255, 168, 177, 0.5);
+    border-radius: 20px;
+}
+p{
+    font-size: 24px;
+}
+.ai-response {
+    white-space: pre-wrap;
+    font-family: 'Poppins';
+    width: 90%;
+    padding: 10px;
+    font-size: 24px;
+
+  }

@@ -1,0 +1,121 @@
+.register-main{
+    font-family:'Poppins';
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh;
+}
+.register-heading{
+    display: inline-block;
+}
+.register-headContainer{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.register-roundLine{
+    background-color: #FFA8B1;
+    height: 4px;
+    width:170px;
+    position: relative;
+    left:10px;
+}
+.register-input{
+    font-family:'Poppins';
+    display: block;
+    border:none;
+    background: none;
+    color:#321E21;
+    font-weight: bold;
+    border-bottom: 2px solid grey;
+    padding: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: large;
+    width: 25em;
+}
+.register-input::placeholder {
+    color: #321E21; /* Replace with your desired color */
+    opacity: 1; /* Set to 1 for full opacity, or adjust as needed */
+}
+.register-input:focus {
+    color: #000000; /* Change color to black on focus */
+    border-color: #000000; /* Optionally change border color */
+    outline: none; /* Remove the default focus outline (optional) */
+}
+.register-otp_button{
+    border: none;
+    background-color: #D5BDAE;
+    border-radius: 20px;
+    padding: 6px 13px;
+    font-size: small;
+    width: 100px;
+    position: relative;
+    top: -60px;
+    right: -330px;
+    cursor: pointer;
+}
+.register-otp_button:hover{
+    background-color: transparent;
+    border: 2px solid #D5BDAE;
+    padding: 4px 10px;
+}
+.register-submit_button{
+    cursor: pointer;
+    border: none;
+    background-color: #FFA8B1;
+    border-radius: 25px;
+    padding:10px 50px;
+    width: 200px;
+    margin: auto;
+}
+.register-submit_button:hover{
+    background-color: transparent;
+    padding:8px 50px;
+    border: 2px solid #FFA8B1;
+}
+.register-form{
+/* border: 2px solid red; */
+display: inline-block;
+}
+.register-input[type="number"]::-webkit-outer-spin-button,
+.register-input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.register-image{
+    position: relative;
+    right: -10%;
+}
+.register-logo{
+    width: 100%;
+    height: 60%;
+}
+.register-timer-text{
+    position: relative;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+@media (max-width: 800px) {
+    .register-image .register-logo{
+        display: none;
+    }
+}
+@media (min-width: 800px) and (max-width:1000px) {
+    .register-image .register-logo{
+        display: inline;
+        width: 120%;
+        height: 80%;
+    }
+}
+@media (min-width: 800px){
+    .register-form{
+        position: relative;
+        left: 60px;
+    }
+}

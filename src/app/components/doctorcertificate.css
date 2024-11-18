@@ -1,0 +1,15 @@
+.certificate-main-cont{
+    font-family: "Poppins";
+    display: block;
+    position: relative;
+    width: 34vw;
+    height: 44vh;
+    border: 2px solid rgba(255, 168, 177, 0.5);
+    border-radius: 50px;
+    padding: 40px;
+}
+.certificate-image img{
+    position: relative;
+    padding: 20px;
+    align-items: center;
+}

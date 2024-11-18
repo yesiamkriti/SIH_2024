@@ -1,0 +1,110 @@
+.side-navbar-cont{
+  position: fixed;
+  display: flex;
+  z-index: 1;
+}
+
+.side-navbar {
+
+    font-family: "Poppins";
+    border-right: 2px solid rgba(255, 168, 177, 0.5);
+    border-bottom: 2px solid rgba(255, 168, 177, 0.5);
+    border-top: 2px solid rgba(255, 168, 177, 0.5);
+    height: 100vh;
+    width: 100px;
+    align-items: left;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 50px 50px 0px;
+    background: #F8EAEC;
+    gap: 20px;
+    z-index: 1;
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  
+    svg:hover {
+      fill: #D4616D;
+      cursor: pointer;
+    }
+  }
+  
+  .side-navbar.side-navbar.expanded {
+    width: 250px;
+    background: #F8EAEC;
+    opacity: 1;
+  }
+  
+  .hamburger-icon {
+    cursor: pointer;
+
+    /* Margin around the hamburger icon */
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    /* Space between each menu item */
+    transition: all 0.3s ease;
+    /* Smooth transition */
+    padding: 5px;
+    border-radius: 10px;
+  }
+  
+  .menu-item:hover {
+    color: #D4616D;
+    cursor: pointer;
+    background: rgba(255, 168, 177, 0.291);
+  
+    .icon-label {
+      color: #D4616D;
+    }
+  }
+  
+  .icon-label {
+    margin-left: 10px;
+    /* Space between the icon and the text */
+    font-size: 20px;
+    color: black;
+    opacity: 0;
+    /* Initially hidden */
+    white-space: nowrap;
+    /* Prevent text wrapping */
+    transition: opacity 0.3s ease;
+    /* Smooth transition for text appearance */
+  }
+  
+  .side-navbar.expanded .menu-item .icon-label {
+    opacity: 1;
+    /* Show text when expanded */
+  }
+  
+  .side-navbar.expanded .ayuraksha-logo-cont {
+    left: 45%;
+    /* Center the logo only */
+    transform: translateX(-50%);
+    /* Center the logo */
+  }
+  .side-navbar.expanded .ayuraksha-logo {
+    left: 45%;
+    /* Center the logo only */
+    transform: translateX(-50%);
+    /* Center the logo */
+  }
+  
+  .ayuraksha-logo-cont {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+  }
+  .ayuraksha-logo {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+  }

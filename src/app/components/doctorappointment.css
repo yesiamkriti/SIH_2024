@@ -1,0 +1,87 @@
+.doctor-appointment-main-cont{
+    font-family: "Poppins";
+    position: absolute;
+    width: 80vw;
+    height: 440px;
+    /* background: red; */
+    /* left: 250px;
+    top: 500px; */
+    gap: 10px;
+    svg{
+        height: 20px;
+    }
+}
+.Doctor-appointment-heading-cont{
+    position: relative;
+    /* bottom: 450px; */
+}
+.Doctor-appointment-heading{
+    position: absolute;
+    display: flex;
+    width:300px;
+    flex-direction: column;
+    color: rgba(212, 97, 109, 1);
+    /* background-color: red; */
+}
+
+
+.Doctor-Appointments-list-cont{
+    position: relative;
+    border: none;
+    /* padding: 10px; */
+    border: 3px solid rgba(255, 168, 177, 1);
+    /* width: 80%; */
+    height: 400px;
+    top: 40px;
+    /* top: 100px; */
+    /* bottom: 400px; */
+    border-radius: 30px;
+    align-items: center;
+    overflow-y: auto;
+    /* justify-content: center; */
+}
+
+.Doctor-Appointments-list-cont::-webkit-scrollbar {
+    display: none;
+}
+/* Style for the table */
+table {
+    font-size: 20px;
+    width: 100%;
+    border-collapse: separate; /* Allows rounded corners */
+    border-spacing: 0; /* Ensures spacing is zero for consistent borders */
+    border-radius: 30px;
+    overflow: hidden;
+    /* margin: 20px 0; */
+}
+
+/* Style for table header */
+th {
+    background: rgba(255, 168, 177, 0.3);
+    color: #333;
+    text-align: center;
+    padding: 12px 8px;
+}
+
+/* Style for table rows */
+tr {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Alternate row color */
+tr:nth-child(even) {
+    background: rgba(255, 168, 177, 0.3);
+}
+
+/* Table data cells */
+td {
+  padding: 20px 8px; /* Adjust padding to increase row height */
+  text-align: center;
+}
+
+/* Highlight the status in red */
+td.status {
+    color: rgba(212, 97, 109, 1);
+
+}

@@ -1,0 +1,160 @@
+.ehr-main-cont{
+    font-family: "Poppins";
+    position: relative;
+    width: 100vw;
+    height: auto;
+    /* background: red; */
+    left: 250px;
+    gap: 10px;
+    align-items: center;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+    svg{
+        position: relative;
+        top: 4px;
+        height: 20px;
+    }
+}
+
+.ehr-heading-cont{
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    /* background-color: red; */
+    /* align-items: center;
+    justify-content: center; */
+    left: 25%;
+    padding-top: 10vh;
+}
+
+.ehr-list-cont {
+    position: relative;
+    border: none;
+    /* padding: 10px; */
+    border: 3px solid rgba(255, 168, 177, 1);
+    width: 80%;
+    top: 50px;
+    border-radius: 30px;
+    align-items: center;
+  }
+  .ehr-table {
+    width: 100%;
+    border-collapse: separate; /* Allows rounded corners */
+    border-spacing: 0; /* Ensures spacing is zero for consistent borders */
+    border-radius: 30px; /* Rounded corners for the table */
+    overflow: hidden;
+  }
+  th {
+    background: rgba(255, 168, 177, 0.3);
+    color: #333;
+    text-align: center;
+    padding: 12px 8px;
+}
+  tr {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 12px 8px;
+  }
+  td{
+    text-align: center;
+    padding: 12px 8px;
+  }
+  /* Alternate row color */
+  tr:nth-child(even) {
+      background: rgba(255, 168, 177, 0.3);
+  }
+  .btn-preview,
+  .btn-download {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  .btn-preview ,.btn-download {
+    background-color:rgba(255, 255, 255, 0);
+    color: black;
+  }
+
+
+
+  /* Style for modal overlay */
+.preview-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Ensures it's on top of everything */
+  }
+  
+  /* Style for modal content */
+  .preview-popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+  
+  .preview-popup-content h2 {
+    margin-top: 0;
+  }
+  
+  .preview-popup-content iframe {
+    border: none;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the close button */
+  .btn-close {
+    background-color: rgba(255, 255, 255, 0);
+    /* color: white; */
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 4px;
+  }
+  
+  .btn-close:hover {
+    color: red;
+  }
+  .upload-report-button{
+    position: relative;
+    left: 65%;
+    top:5%;
+    border: none;
+    background: rgba(255, 168, 177, 1);
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  .upload-report-button:hover{
+    background: transparent;
+    border: 5px solid rgba(255, 168, 177, 1);
+    padding: 5px;
+  }
+  .upload-report-cont{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ffa8b15a;
+    top:0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+  }
+  
